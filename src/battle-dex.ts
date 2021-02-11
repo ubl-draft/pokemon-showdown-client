@@ -636,6 +636,11 @@ const Dex = new class implements ModdedDex {
 				name += '-f';
 			}
 
+			if(name.startsWith("furfrou")){
+				spriteData.url='/sprites/'+dir+'/'+name+'.png';
+				return spriteData;
+			}
+
 			spriteData.url += dir + '/' + name + '.png';
 		}
 

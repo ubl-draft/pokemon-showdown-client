@@ -182,7 +182,7 @@ const Dex = new class implements ModdedDex {
 	resourcePrefix = (() => {
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
-		return `${prefix}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/`;
+		return `${prefix}//34.122.171.53/`;
 	})();
 
 	fxPrefix = (() => {
@@ -634,11 +634,6 @@ const Dex = new class implements ModdedDex {
 			// so there are no sprites for it
 			if (spriteData.gen >= 4 && miscData['frontf'] && options.gender === 'F') {
 				name += '-f';
-			}
-
-			if(name.startsWith("furfrou")){
-				spriteData.url='/sprites/'+dir+'/'+name+'.png';
-				return spriteData;
 			}
 
 			spriteData.url += dir + '/' + name + '.png';

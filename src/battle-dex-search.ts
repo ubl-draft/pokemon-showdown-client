@@ -599,10 +599,6 @@ abstract class BattleTypedSearch<T extends SearchType> {
 			this.formatType = 'nfe';
 			if (!format) format = 'ou' as ID;
 		}
-		if (format.includes('ubldoubles')) {
-			this.formatType = 'natdex';
-			format = 'ou' as ID
-		}
 
 		this.format = format;
 

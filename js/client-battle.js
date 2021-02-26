@@ -1045,16 +1045,7 @@
 			app.addPopup(BattleOptionsPopup, {battle: this.battle, room: this});
 		},
 		clickReplayDownloadButton: function (e) {
-			var filename = (this.battle.tier || 'Battle').replace(/[^A-Za-z0-9]/g, '');
-
-			// ladies and gentlemen, JavaScript dates
-			var date = new Date();
-			filename += '-' + date.getFullYear();
-			filename += (date.getMonth() >= 9 ? '-' : '-0') + (date.getMonth() + 1);
-			filename += (date.getDate() >= 10 ? '-' : '-0') + date.getDate();
-
-			filename += '-' + toID(this.battle.p1.name);
-			filename += '-' + toID(this.battle.p2.name);
+			var filename = this.battle.roomid.slice(7)
 
 			e.currentTarget.href = BattleLog.createReplayFileHref(this);
 			e.currentTarget.download = filename + '.html';

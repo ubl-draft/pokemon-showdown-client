@@ -180,8 +180,12 @@ const Dex = new class implements ModdedDex {
 	pokeballs: string[] | null = null;
 
 	resourcePrefix = (() => {
+		/*
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
+		*/
+		// server doesn't support https
+		let prefix = "http:"
 		return `${prefix}//34.122.171.53/`;
 	})();
 

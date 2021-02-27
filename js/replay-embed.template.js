@@ -12,28 +12,28 @@ function requireScript(url) {
 	document.head.appendChild(scriptEl);
 }
 
-linkStyle('http://34.122.171.53/style/font-awesome.css?');
-linkStyle('http://34.122.171.53/style/battle.css?a7');
-linkStyle('http://34.122.171.53/style/replay.css?a7');
-linkStyle('http://34.122.171.53/style/utilichart.css?a7');
+linkStyle('https://ubl.us.to/style/font-awesome.css?');
+linkStyle('https://ubl.us.to/style/battle.css?a7');
+linkStyle('https://ubl.us.to/style/replay.css?a7');
+linkStyle('https://ubl.us.to/style/utilichart.css?a7');
 
-requireScript('http://34.122.171.53/js/lib/ps-polyfill.js');
-requireScript('http://34.122.171.53/config/config.js?a7');
-requireScript('http://34.122.171.53/js/lib/jquery-1.11.0.min.js');
-requireScript('http://34.122.171.53/js/lib/lodash.compat.js');
-requireScript('http://34.122.171.53/js/lib/html-sanitizer-minified.js');
-requireScript('http://34.122.171.53/js/battle-sound.js');
-requireScript('http://34.122.171.53/js/battledata.js?a7');
-requireScript('http://34.122.171.53/data/pokedex-mini.js?a7');
-requireScript('http://34.122.171.53/data/pokedex-mini-bw.js?a7');
-requireScript('http://34.122.171.53/data/graphics.js?a7');
-requireScript('http://34.122.171.53/data/pokedex.js?a7');
-requireScript('http://34.122.171.53/data/moves.js?a7');
-requireScript('http://34.122.171.53/data/abilities.js?a7');
-requireScript('http://34.122.171.53/data/items.js?a7');
-requireScript('http://34.122.171.53/data/teambuilder-tables.js?a7');
-requireScript('http://34.122.171.53/js/battle-tooltips.js?a7');
-requireScript('http://34.122.171.53/js/battle.js?a7');
+requireScript('https://ubl.us.to/js/lib/ps-polyfill.js');
+requireScript('https://ubl.us.to/config/config.js?a7');
+requireScript('https://ubl.us.to/js/lib/jquery-1.11.0.min.js');
+requireScript('https://ubl.us.to/js/lib/lodash.compat.js');
+requireScript('https://ubl.us.to/js/lib/html-sanitizer-minified.js');
+requireScript('https://ubl.us.to/js/battle-sound.js');
+requireScript('https://ubl.us.to/js/battledata.js?a7');
+requireScript('https://ubl.us.to/data/pokedex-mini.js?a7');
+requireScript('https://ubl.us.to/data/pokedex-mini-bw.js?a7');
+requireScript('https://ubl.us.to/data/graphics.js?a7');
+requireScript('https://ubl.us.to/data/pokedex.js?a7');
+requireScript('https://ubl.us.to/data/moves.js?a7');
+requireScript('https://ubl.us.to/data/abilities.js?a7');
+requireScript('https://ubl.us.to/data/items.js?a7');
+requireScript('https://ubl.us.to/data/teambuilder-tables.js?a7');
+requireScript('https://ubl.us.to/js/battle-tooltips.js?a7');
+requireScript('https://ubl.us.to/js/battle.js?a7');
 
 var Replays = {
 	battle: null,

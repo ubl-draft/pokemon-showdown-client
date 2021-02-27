@@ -1045,7 +1045,7 @@
 			app.addPopup(BattleOptionsPopup, {battle: this.battle, room: this});
 		},
 		clickReplayDownloadButton: function (e) {
-			var filename = this.battle.roomid.slice(7)
+			var filename = this.battle.roomid.toString().slice(7)
 
 			e.currentTarget.href = BattleLog.createReplayFileHref(this);
 			e.currentTarget.download = filename + '.html';

@@ -190,7 +190,7 @@ const Dex = new class implements ModdedDex {
 			if (window.Replays) return `https://${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
 			return `fx/`;
 		}
-		return `//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
+		return `//ubl.us.to/fx/`;
 	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
@@ -219,7 +219,7 @@ const Dex = new class implements ModdedDex {
 		}
 		if (avatar.includes('.')) {
 			// custom avatar served by the server
-			return 'https://ubl.us.to/avatars/' + encodeURIComponent(avatar).replace(/\%3F/g, '?');
+			return 'http://ubl.us.to/avatars/' + encodeURIComponent(avatar).replace(/\%3F/g, '?');
 		}
 		return Dex.resourcePrefix + 'sprites/trainers/' + Dex.sanitizeName(avatar || 'unknown') + '.png';
 	}
